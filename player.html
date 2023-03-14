@@ -13,8 +13,9 @@
 			let video = document.createElement('iframe');
 			video.id = 'videoiframe';
 			video.src = 'https://' + video_url;
-			video.width = '100%';
-			video.height = '100%';
+// 			video.width = '100%';
+// 			video.height = '100%';
+			video.frameborder = '0';
 			video.setAttribute('allowFullScreen', '');
 			document.querySelector('#play').appendChild(video);
 		});
