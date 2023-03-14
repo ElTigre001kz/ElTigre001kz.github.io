@@ -1,0 +1,39 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    iframe{
+        min-width: 100%;
+        margin-top: 0px;
+    }
+    .services-bg{
+        padding-bottom: 0px;
+    }
+    .services-img-wrap .download-btn {
+        right: -110px !important;
+        bottom: 110px !important;
+        padding: 14px 49px !important;
+    }
+}
+
+@media (max-width: 991.98px){
+    .services-img-wrap {
+        margin-bottom: 50px;
+    }
+    .services-img-wrap .download-btn {
+        right: -15px;
+    }
+    .services-content-wrap {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1199.98px){
+    .services-img-wrap .download-btn {
+        right: -80px;
+    }
+    .services-bg .title-style-two {
+        padding-right: 0;
+    }
+    .services-list {
+        padding-right: 0;
+    }
+}
