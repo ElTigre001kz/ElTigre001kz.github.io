@@ -8,6 +8,7 @@
 	<title>player</title>
 	
 	<meta name="viewport" content="width=device-width">
+	
 	<script>
 	let params = (new URL(document.location)).searchParams; 
 	let video_url = params.get("video");
@@ -23,14 +24,11 @@
 		});
 	}
 	</script>
+	
 	<style>
 		.bee-row,
 		.bee-row-content {
 			position: relative
-		}
-
-		.bee-html-block {
-			text-align: center
 		}
 
 		.bee-row-1,
@@ -61,8 +59,20 @@
 			display: flex
 		}
 
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33%
+		}
+
 		.bee-row-content .bee-col-w12 {
 			flex-basis: 100%
+		}
+
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			width: 100%
 		}
 
 		@media (max-width:768px) {
@@ -78,13 +88,12 @@
 			color: #000
 		}
 
-		.bee-row-1 .bee-col-1 {
+		.bee-row-1 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-2 .bee-col-2,
+		.bee-row-2 .bee-col-3 {
 			padding-bottom: 5px;
 			padding-top: 5px
-		}
-
-		.bee-row-2 .bee-col-1 {
-			padding: 5px
 		}
 	
 .legal {
@@ -381,12 +390,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
 	<div class="bee-page-container">
 		<div class="bee-row bee-row-1">
-			<div id="play"></div><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html">
-	  </ins><script async src="https://aj1907.online/63c0d7d8.js"></script>
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-image">
+						<div id="play"></div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="bee-row bee-row-2">
-			
-			
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w4"></div>
+				<div class="bee-col bee-col-2 bee-col-w4"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html">
+	  </ins><script async src="https://aj1907.online/63c0d7d8.js"></script></div>
+				<div class="bee-col bee-col-3 bee-col-w4"></div>
+			</div>
 		</div>
 	</div>
 
@@ -396,4 +414,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
 
