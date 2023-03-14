@@ -8,15 +8,33 @@
 	<title>player</title>
 	
 	<meta name="viewport" content="width=device-width">
+	<script>
+	let params = (new URL(document.location)).searchParams; 
+	let video_url = params.get("video");
+	if (video_url) {
+		window.addEventListener('load', function() {
+			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
+			video.src = 'https://' + video_url;
+			video.width = '100%';
+			video.height = '100%';
+			video.setAttribute('allowFullScreen', '');
+			document.querySelector('#play').appendChild(video);
+		});
+	}
+	</script>
 	<style>
 		.bee-row,
 		.bee-row-content {
 			position: relative
 		}
 
+		.bee-html-block {
+			text-align: center
+		}
+
 		.bee-row-1,
-		.bee-row-2,
-		.bee-row-3 {
+		.bee-row-2 {
 			background-repeat: no-repeat
 		}
 
@@ -47,14 +65,6 @@
 			flex-basis: 100%
 		}
 
-		.bee-divider {
-			overflow: auto
-		}
-
-		.bee-divider .center {
-			margin: 0 auto
-		}
-
 		@media (max-width:768px) {
 			.bee-row-content:not(.no_stack) {
 				display: block
@@ -62,16 +72,18 @@
 		}
 
 		.bee-row-1 .bee-row-content,
-		.bee-row-2 .bee-row-content,
-		.bee-row-3 .bee-row-content {
+		.bee-row-2 .bee-row-content {
 			background-repeat: no-repeat;
 			border-radius: 0;
 			color: #000
 		}
 
-		.bee-row-1 .bee-col-1,
-		.bee-row-2 .bee-col-1,
-		.bee-row-3 .bee-col-1 {
+		.bee-row-1 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-2 .bee-col-1 {
 			padding: 5px
 		}
 	
@@ -364,48 +376,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		transform: rotate(360deg);
 	}
 }
-</style><link rel="preconnect" href="https://yoomoney.ru/checkout/checkout-ui" crossorigin="anonymous">
-	
-	<script>
-	let params = (new URL(document.location)).searchParams; 
-	let video_url = params.get("video");
-	if (video_url) {
-		window.addEventListener('load', function() {
-			let video = document.createElement('iframe');
-			video.id = 'videoiframe';
-			video.src = 'https://' + video_url;
-			video.width = '100%';
-			video.height = '100%';
-			video.setAttribute('allowFullScreen', '');
-			document.querySelector('#play').appendChild(video);
-		});
-	}
-	</script>
-	
-	</head>
+</style><link rel="preconnect" href="https://yoomoney.ru/checkout/checkout-ui" crossorigin="anonymous"></head>
 
 <body>
 	<div class="bee-page-container">
 		<div class="bee-row bee-row-1">
-			<div id="play"></div>
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-html-block"><div id="play"></div></div>
+				</div>
 			</div>
 		</div>
 		<div class="bee-row bee-row-2">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
-					<div class="bee-block bee-block-1 bee-divider">
-						<div class="center bee-separator" style="border-top:2px solid #ffa900;width:100%;"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-3">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w12"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html">
+					<div class="bee-block bee-block-1 bee-html-block"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html">
 	  </ins></div>
-	</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -417,13 +404,3 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-
-
-
-</body></html>
-
-
-
-
-	
-	
