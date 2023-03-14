@@ -11,12 +11,12 @@
 	if (video_url) {
 		window.addEventListener('load', function() {
 			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
 			video.src = 'https://' + video_url;
 			video.width = '100%';
 			video.height = '100%';
-			video.frameborder = '0';
 			video.setAttribute('allowFullScreen', '');
-			document.querySelector('film-container').appendChild(video);
+			document.querySelector('#play').appendChild(video);
 		});
 	}
 	</script>
@@ -52,9 +52,7 @@ iframe {
 	</style> -->
   </head>
   <body>
-    <div class="film-container">
-	  
-	</div>
+    div id="play"></div>
 	  <div class="footer">
 		<p><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html">
 	  </ins></div>
