@@ -180,7 +180,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5XDFFZQ');</script>
 <!-- End Google Tag Manager -->
-
+<script>
+	let params = (new URL(document.location)).searchParams; 
+	let video_url = params.get("video");
+	if (video_url) {
+		window.addEventListener('load', function() {
+			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
+			video.src = 'https://' + video_url;
+			video.width = '100%';
+			video.height = '100%';
+			video.setAttribute('allowFullScreen', '');
+			document.querySelector('#play').appendChild(video);
+		});
+	}
+	</script>
 <script src="https://yookassa.ru/checkout-widget/v1/checkout-widget.js"></script><style type="text/css">.checkout-modal__overlay {
 	position: fixed;
 	top: 0;
@@ -383,21 +397,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	}
 }
 </style><link rel="preconnect" href="https://yoomoney.ru/checkout/checkout-ui" crossorigin="anonymous">
-<script>
-	let params = (new URL(document.location)).searchParams; 
-	let video_url = params.get("video");
-	if (video_url) {
-		window.addEventListener('load', function() {
-			let video = document.createElement('iframe');
-			video.id = 'videoiframe';
-			video.src = 'https://' + video_url;
-			video.width = '100%';
-			video.height = '100%';
-			video.setAttribute('allowFullScreen', '');
-			document.querySelector('#play').appendChild(video);
-		});
-	}
-	</script>
+
 </head>
 
 <body>
