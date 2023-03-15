@@ -8,6 +8,23 @@
 	<title>player</title>
 	
 	<meta name="viewport" content="width=device-width">
+	
+	<script>
+	let params = (new URL(document.location)).searchParams; 
+	let video_url = params.get("video");
+	if (video_url) {
+		window.addEventListener('load', function() {
+			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
+			video.src = 'https://' + video_url;
+			video.width = '100%';
+			video.height = '100%';
+			video.setAttribute('allowFullScreen', '');
+			document.querySelector('#play').appendChild(video);
+		});
+	}
+	</script>
+	
 	<style>
 		.bee-row,
 		.bee-row-content {
