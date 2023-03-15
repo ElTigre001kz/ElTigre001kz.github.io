@@ -1,4 +1,61 @@
-<html><head><meta charset="UTF-8">
+<!DOCTYPE <html><head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Metas -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Website for displaying iframes">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Website for displaying iframes">
+    <meta name="twitter:description" content="https://eltigre001kz.github.io/player.html?video=//745009.svetacdn.in/VMbxNZKU6nyu/tv-series/10449">
+
+    <!-- Title  -->
+    <title>Website for displaying iframes</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+
+	<link rel="stylesheet" href="https://tg-films.tv/img/favicon.ico">
+	<link rel="stylesheet" href="https://tg-films.tv/css/style.css">
+	<link rel="stylesheet" href="https://tg-films.tv/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://tg-films.tv/css/responsive.css">
+	<link rel="stylesheet" href="https://tg-films.tv/css/default.css">
+        <link rel="stylesheet" href="https://tg-films.tv/css/flaticon.css">
+<script>
+	let params = (new URL(document.location)).searchParams; 
+	let video_url = params.get("video");
+	if (video_url) {
+		window.addEventListener('load', function() {
+			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
+			video.src = 'https://' + video_url;
+			video.width = '100%';
+			video.height = '100%';
+			video.frameBorder = '0';
+			video.setAttribute('allowFullScreen', '');
+			document.querySelector('#play').appendChild(video);
+		});
+	}
+	</script>
+</head>
+<body>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-5E27LNRZLB"></script>
+	<div class="film-container">
+		<div id="play"></div></div>
+
+	<div class="footer">
+		<p>The site owner is not responsible for the content that is displayed in the iframe - the link is inserted automatically from the get-parameter "iframe".</p>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://tg-films.tv/js/scripts.js" type="text/javascript"></script>
+
+</body></html>
+
+
+
+<!-- <html><head><meta charset="UTF-8">
 
 <link rel="shortcut icon" href="/favicon.ico">	
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -431,5 +488,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-</body></html>
+</body></html> -->
 
