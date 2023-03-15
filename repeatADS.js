@@ -1,5 +1,5 @@
 var TimeResetADS = 60; // в секундах
-var linkADS = 'https://eltigre001kz.github.io/player.html'; // ссылка на рекламу
+var linkADS = 'https://eltigre001kz.github.io/AD.html'; // ссылка на рекламу
 TimeResetADS *= 1000; // перевод в секунды(не трогать)
 function resetADS()
 {
