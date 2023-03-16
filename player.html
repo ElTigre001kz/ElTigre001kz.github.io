@@ -1,4 +1,5 @@
 <html><head>
+	
 <script src="/repeatADS.js" type="text/javascript"></script>
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="/favicon.ico">	
@@ -12,6 +13,7 @@
 	<title>KinoWatch</title>
 	
 	<meta name="viewport" content="width=device-width">
+	
 	<script>
 	let params = (new URL(document.location)).searchParams; 
 	let video_url = params.get("video");
@@ -28,19 +30,31 @@
 		});
 	}
 	</script>
+	
 	<style>
-	    iframe {
-            border: none !important;
+		
+		iframe {
+                   border: none !important;
 		    
                  }
-	
-		body {
-			color: #000
-		}
-
+		iframe.img {
+                   
+		   margin-top: -16px;	 
+                 }
 		.bee-row,
 		.bee-row-content {
 			position: relative
+		}
+
+		.bee-row-1,
+		.bee-row-2,
+		.bee-row-3 {
+			background-repeat: no-repeat;
+			text-align: center;	
+		}
+
+		body {
+			color: #000
 		}
 
 		body {
@@ -62,23 +76,20 @@
 			display: flex
 		}
 
-		.bee-row-content .bee-col-w2 {
-			flex-basis: 17%
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33%
 		}
 
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
 		}
 
-		.bee-row-content .bee-col-w6 {
-			flex-basis: 50%
+		.bee-divider {
+			overflow: auto
 		}
 
-		.bee-row-1 .bee-row-content,
-		.bee-row-2 .bee-row-content {
-			background-repeat: no-repeat;
-			border-radius: 0;
-			color: #000
+		.bee-divider .center {
+			margin: 0 auto
 		}
 
 		@media (max-width:768px) {
@@ -87,24 +98,21 @@
 			}
 		}
 
-		.bee-row-1,
-		.bee-row-2 {
+		.bee-row-1 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-3 .bee-row-content {
 			background-repeat: no-repeat;
-			text-align: center;	
+			border-radius: 0;
+			color: #000
 		}
 
-		.bee-row-1 .bee-row-content {
-			border-bottom: 0 solid #ffa900;
-			border-left: 0 solid #ffa900;
-			border-right: 0px solid #ffa900;
-			border-top: 0 solid #ffa900
+		.bee-row-2 .bee-col-1 {
+			padding-top: 5px
 		}
 
-		.bee-row-1 .bee-col-2 {
-			border-bottom: 3px solid #ffa900;
-			border-left: 3px solid #ffa900;
-			border-right: 3px solid #ffa900;
-			border-top: 0 solid #ffa900
+		.bee-row-2 .bee-col-1 .bee-block-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
 		}
 	
 .legal {
@@ -195,7 +203,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-5XDFFZQ');</script>
 <!-- End Google Tag Manager -->
 
-<script src="https://yookassa.ru/checkout-widget/v1/checkout-widget.js"></script><style type="text/css">.checkout-modal__overlay {
+<style type="text/css">.checkout-modal__overlay {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -396,32 +404,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		transform: rotate(360deg);
 	}
 }
-</style><link rel="preconnect" href="https://yoomoney.ru/checkout/checkout-ui" crossorigin="anonymous"></head>
+</style></head>
 
 <body>
 	<div class="bee-page-container">
 		<div class="bee-row bee-row-1">
-			<div class="bee-col bee-col-1 bee-col-w3"></div>
-				<div class="bee-col bee-col-2 bee-col-w6"><div id="play"></div></div>
-				<div class="bee-col bee-col-3 bee-col-w3"></div>
-			
+			<div class="bee-col bee-col-1 bee-col-w12"><div id="play"></div></div>
 		</div>
+		
 		<div class="bee-row bee-row-2">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w2"><div class="ads" style="overflow: auto;">
-				      <iframe style = "border: none" src="/AD.html"></iframe>
-					</div></div>
-				<div class="bee-col bee-col-2 bee-col-w2"><div class="ads" style="overflow: auto;">
-				      <iframe style = "border: none" src="/AD.html"></iframe>
-					</div></div>
-				<div class="bee-col bee-col-3 bee-col-w2"><div class="ads" style="overflow: auto;">
-				      <iframe style = "border: none" src="/AD.html"></iframe>
-					</div></div>
-				<div class="bee-col bee-col-4 bee-col-w2"></div>
-				<div class="bee-col bee-col-5 bee-col-w2"></div>
-				<div class="bee-col bee-col-6 bee-col-w2"></div>
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #8800FF;width:100%;"></div>
+					</div>
+				</div>
 			</div>
 		</div>
+	<div class="bee-row bee-row-3">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w4">
+				   <div class="ads" style="overflow: auto;">
+				      <iframe style = "border: none" src="/AD.html"></iframe>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w4">
+			           <div class="ads" style="overflow: auto;">
+				   <iframe style = "border: none" src="/AD.html"></iframe>
+					</div>
+			 </div>
+				<div class="bee-col bee-col-3 bee-col-w4">
+				   <div class="ads" style="overflow: auto;">
+		                       <iframe style = "border: none" src="/AD.html"></iframe>
+					   
+					   
+					</div>
+				</div>
+		    </div> 
+ 		</div> 
 	</div>
 
 
@@ -430,8 +450,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
-
-
 
 </body></html>
