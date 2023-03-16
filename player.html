@@ -30,7 +30,7 @@
 				
 			let name = params.get("name");
 			if (name) {
-				document.title = name + ' - смотреть онлайн';
+				document.title = name + '(' + year + ')' + ' - смотреть онлайн';
 				document.getElementById('name').appendChild(document.createTextNode(name));
 			}
 			let year = params.get("year");
