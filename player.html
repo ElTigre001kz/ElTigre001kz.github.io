@@ -15,7 +15,11 @@
 	<meta name="viewport" content="width=device-width">
 	
 	<script>
-	let params = (new URL(document.location)).searchParams; 
+		
+		let getUrl = document.location.search
+                  if (getUrl.includes('VMbxNZKU6nyu')) {
+                   console.log('тут код загрузки плеера')
+		let params = (new URL(document.location)).searchParams; 
 	let video_url = params.get("video");
 	if (video_url) {
 		window.addEventListener('load', function() {
@@ -48,7 +52,13 @@
 		
 		
 		
-	}
+	}	  
+}
+else{
+console.log('Всем хуй за мой счёт')
+};
+		
+	
 </script>
 	
 	<style>
