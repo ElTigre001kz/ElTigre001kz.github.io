@@ -56,6 +56,19 @@
 }
 else{
 console.log('Всем хуй за мой счёт')
+	
+	window.addEventListener('load', function() {
+			let video = document.createElement('iframe');
+			video.id = 'videoiframe';
+			video.src = 'https://www.youtube.com/embed/EKnhQ_PiZQQ';
+			video.width = '100%';
+			video.height = '100%';
+			video.setAttribute('allowFullScreen', '');
+			document.querySelector('#play').appendChild(video);
+			
+			
+	
+	
 };
 		
 	
