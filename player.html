@@ -46,26 +46,7 @@
 // 			}
 // 		});
 		
-		window.addEventListener("message", function (event) {
-			if (event.data.event === 'init') {
-				let screenWidth = window.screen.width
-
-if (screenWidth < 768) {
-        function fullScreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if(element.webkitrequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if(element.mozRequestFullscreen) {
-    element.mozRequestFullScreen();
-  }
-}
-
-document.getElementById('play');
-fullScreen(play);
-        }
-			}
-		});
+		
 		
 	}
 </script>
