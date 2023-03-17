@@ -1,4 +1,5 @@
 <html><head>
+	
 <script src="/repeatADS.js" type="text/javascript"></script>
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="/favicon.ico">	
@@ -13,9 +14,9 @@
 	
 <meta name="viewport" content="width=device-width">
 <script src="/loadPlayer.js" type="text/javascript"></script>
-	<style>
 	
-	/* 	div[id*=epom-pushdown] {
+<style>
+/* 	div[id*=epom-pushdown] {
                height: 0px !important;
 	       position: absolute !important;
 	       z-index: -1 !important;
@@ -42,9 +43,6 @@
 		
 		iframe {
                    border: none !important;
-				   height: fill-available !important;
-                   height: -webkit-fill-available !important;
-                   height: -moz-available !important;
 		    
                  }
 		
@@ -57,29 +55,27 @@
                             #play {
                                  height: 71vh;
                                  min-width: 71%;
-                          }
-	}
-		a,
-		body {
-			color: #000
-		}
-
+			}}
+			
+    .legal_item_container {
+      flex-direction: column;
+    }
+}
+		
 		.bee-row,
 		.bee-row-content {
 			position: relative
 		}
 
-		.bee-html-block,
-		.bee-row-1 .bee-col-3 .bee-block-1 {
-			text-align: center
+		.bee-row-1,
+		.bee-row-2,
+		.bee-row-3 {
+			background-repeat: no-repeat;
+			text-align: center;	
 		}
 
-		.bee-row-2 .bee-col-2,
-		.bee-row-2 .bee-row-content {
-			border-bottom: 0 solid #ffa900;
-			border-left: 0 solid #ffa900;
-			border-right: 0px solid #ffa900;
-			border-top: 0 solid #ffa900
+		body {
+			color: #000
 		}
 
 		body {
@@ -91,8 +87,7 @@
 			box-sizing: border-box
 		}
 
-		body,
-		h1 {
+		body {
 			margin: 0
 		}
 
@@ -102,28 +97,26 @@
 			display: flex
 		}
 
-		.bee-row-content .bee-col-w2 {
-			flex-basis: 17%
-		}
-
-		.bee-row-content .bee-col-w3 {
-			flex-basis: 25%
-		}
-
 		.bee-row-content .bee-col-w4 {
 			flex-basis: 33%
 		}
 
-		.bee-row-content .bee-col-w6 {
-			flex-basis: 50%
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
 		}
 
-		.bee-image {
+		.bee-divider {
 			overflow: auto
 		}
 
-		.bee-image .bee-center {
+		.bee-divider .center {
 			margin: 0 auto
+		}
+
+		@media (max-width:768px) {
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
 		}
 
 		.bee-row-1 .bee-row-content,
@@ -134,51 +127,13 @@
 			color: #000
 		}
 
-		.bee-image img {
-			display: block;
-			width: 100%
+		.bee-row-2 .bee-col-1 {
+			padding-top: 5px
 		}
 
-		.bee-social .icon img {
-			max-height: 32px
-		}
-
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
-		}
-
-		.bee-row-1,
-		.bee-row-2,
-		.bee-row-3 {
-			background-repeat: no-repeat;
-			text-align: center;	
-		}
-
-		.bee-row-1 .bee-col-1 {
+		.bee-row-2 .bee-col-1 .bee-block-1 {
 			padding-bottom: 5px;
-			padding-top: 5px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center
-		}
-
-		.bee-row-1 .bee-col-1 .bee-block-1 {
-			padding-left: 10px;
-			width: 100%
-		}
-
-		.bee-row-1 .bee-col-2,
-		.bee-row-1 .bee-col-3 {
-			display: flex;
-			flex-direction: column;
-			justify-content: center
-		}
-
-		.bee-row-1 .bee-col-2 .bee-block-1 {
-			text-align: center;
-			width: 100%
+			padding-top: 5px
 		}
 	
 .legal {
@@ -474,69 +429,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 	<div class="bee-page-container">
-		<div class="bee-row bee-row-1">
+		<div class="bee-row bee-row-1" style= z-index: 9999 !important;">
+			<div class="bee-col bee-col-1 bee-col-w12"><div id="play"></div></div>
+		</div>
+		
+		<div class="bee-row bee-row-2" style= z-index: 9999 !important;">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-divider">
+						<div class="center bee-separator" style="border-top:1px solid #8800FF;width:100%;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="bee-row bee-row-3">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-image"><a href="https://t.me/SearchWatch_bot" target="_blank"><img class="bee-center bee-fixedwidth" src="https://i.postimg.cc/bvqMfqyL/logo.png" style="max-width:216px;" alt=""></a></div>
+				   <div class="ads" style="overflow: auto;">
+				      <iframe src="/AD.html"></iframe>
+					</div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-heading">
-						<h1 style="color:#ffffff;direction:ltr;font-family:Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;font-size:20px;font-weight:700;letter-spacing:normal;line-height:120%;text-align:center;margin-top:0;margin-bottom:0;">
-<span class="tinyMce-placeholder">Я новый блок Title<h1 id="name"></h1><div id="year"></div></span> </h1>
+			           <div class="ads" style="overflow: auto;">
+				   <iframe src="/AD.html"></iframe>
 					</div>
-				</div>
+			 </div>
 				<div class="bee-col bee-col-3 bee-col-w4">
-					<div class="bee-block bee-block-1 bee-social">
-						<div class="content">
-<span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/tiktok@2x.png" alt="TikTok" title="TikTok"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://vk.com/kinowatch_bot" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/vkontakte@2x.png" alt="Vkontakte" title="Vkontakte"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://ok.ru/group/58259070976148" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/odnoklassniki@2x.png" alt="Odnoklassniki" title="Odnoklassniki"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.instagram.com/kinowatch_001/" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/instagram@2x.png" alt="Instagram" title="Instagram"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://www.youtube.com/@kinowatch_001/featured" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/youtube@2x.png" alt="YouTube" title="YouTube"></a></span><span class="icon" style="padding:0 2.5px 0 2.5px;"><a href="https://t.me/SearchWatch_bot" target="_blank"><img src="https://app-rsrc.getbee.io/public/resources/social-networks-icon-sets/circle-color/telegram@2x.png" alt="Telegram" title="Telegram"></a></span>
-</div>
+				   <div class="ads" style="overflow: auto;">
+		                       <iframe src="/AD.html"></iframe>
+					   
+					   
 					</div>
 				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-2">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-html-block"></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w6">
-					<div class="bee-block bee-block-1 bee-html-block">
-						<div id="play"></div>
-					</div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w3">
-					<div class="bee-block bee-block-1 bee-html-block"></div>
-				</div>
-			</div>
-		</div>
-		<div class="bee-row bee-row-3">
-			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"><div class="ads" style="overflow: auto;">
-				   <iframe src="/AD.html"></iframe>
-					</div></div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"><div class="ads" style="overflow: auto;">
-				   <iframe src="/AD.html"></iframe>
-					</div></div>
-				</div>
-				<div class="bee-col bee-col-3 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"><div class="ads" style="overflow: auto;">
-				   <iframe src="/AD.html"></iframe>
-					</div></div>
-				</div>
-				<div class="bee-col bee-col-4 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"></div>
-				</div>
-				<div class="bee-col bee-col-5 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"></div>
-				</div>
-				<div class="bee-col bee-col-6 bee-col-w2">
-					<div class="bee-block bee-block-1 bee-html-block"></div>
-				</div>
-			</div>
-		</div>
+		    </div> 
+ 		</div> 
 	</div>
 
 
@@ -548,9 +474,4 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <ins class="604c7625" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins>
 <ins class="604c7625" data-key="3d42d1f55e888808d27eaf556c3c1c6c" data-cp-host="VMbxNZKU6nyu|3|https://eltigre001kz.github.io/player.html"></ins>
 <script async src="https://aj1907.online/63c0d7d8.js"></script>
-
-
-
 </body></html>
-
-
