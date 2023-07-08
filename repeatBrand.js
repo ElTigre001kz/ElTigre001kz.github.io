@@ -1,4 +1,4 @@
-var TimeResetBranding = 180; // в секундах
+var TimeResetBranding = 3600; // в секундах
 var linkBranding = 'https://eltigre001kz.github.io/Branding.html'; // ссылка на рекламу
 TimeResetBranding *= 1000; // перевод в секунды(не трогать)
 function resetBranding()
