@@ -1,5 +1,5 @@
 <html><head>
-	
+
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="/favicon.ico">	
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -11,145 +11,337 @@
 
 <title>KinoWatch</title>
 	
-<meta name="viewport" content="width=device-width">
-<script src="/loadPlayer.js" type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width">
+	<script src="/loadPlayer.js" type="text/javascript"></script>
+	<style>
 	
-<style>
-/* 	div[id*=epom-pushdown] {
-               height: 0px !important;
-	       position: absolute !important;
-	       z-index: -1 !important;
+	/*выкл*/
+	
+	/* 	div[id*=epom-pushdown] {
+              height: 0px !important;
+	          position: absolute !important;
+	          z-index: -1 !important;
          } */
+         
+ /* 	.ads > iframe{
+              max-width: 150px !important;
+             max-height: 70px !important;
+         } */   
+                 
+ /*выкл*/                
 	
-	div > img{
-    margin: 0px ! important;
-     max-width: 330px !important;
-  }
+ /*выкл тест*/	
+ 
+/* 	 div > img{*/
+/*          margin: 0px ! important;*/
+/*          max-width: 330px !important;*/
+/*  }*/
 
 
 	
-	 .branding > iframe{
-    width: 100% !important;
-    height: 100% !important;
-    position: absolute !important;
-    z-index: -1 !important;
-    top: 0px !important;
-    left: 0px !important;
-}
+/*	 .branding > iframe{*/
+/*          width: 100% !important;*/
+/*          height: 100% !important;*/
+/*          position: absolute !important;*/
+/*          z-index: -1 !important;*/
+/*          top: 0px !important;*/
+/*          left: 0px !important;*/
+/*}*/
 	
-	body {
-    max-width: 100% !important;
-    margin: 0px auto 0 !important;
-}
+/*	body {*/
+/*       max-width: 100% !important;*/
+/*       margin: 0px auto 0 !important;*/
+/*}*/
 	
-	div[id$="file-image"]{
-    z-index: 1 !important;
-    height: 250px !important;
-}
+/*	div[id$="file-image"]{*/
+/*       z-index: 1 !important;*/
+/*       height: 250px !important;*/
+/*}*/
 	
-	div[id*=brnd] {
-	       
-               z-index: -1 !important;
-         }
-	div[id*=epom] {
-	   position: absolute !important;	
-           z-index: -1 !important;
-	   height: 0px !important;	
-}
+/*	div[id*=brnd] {*/
+/*	   z-index: -1 !important;*/
+/*         }*/
+         
+/*	div[id*=epom] {*/
+/*	     position: absolute !important;	*/
+/*         z-index: -1 !important;*/
+/*	     height: 0px !important;	*/
+/*}*/
 		
-		iframe {
-                   border: none !important;
+/*		iframe {*/
+/*           border: none !important;*/
 		    
-                 }
+/*                 }*/
 		
-/* 		.ads > iframe{
-                        max-width: 150px !important;
-                        max-height: 70px !important;
-                 } */
-		
-		@media screen and (max-width: 768px) {
+    /*выкл тест*/
+	
+	
+	
+	@media screen and (max-width: 768px) {
                             #play {
-                                 height: 71vh;
-                                 min-width: 71%;
-			}}
-			
-    .legal_item_container {
-      flex-direction: column;
-    }
-}
-		
-		.bee-row,
-		.bee-row-content {
-			position: relative
-		}
-
-		.bee-row-1,
-		.bee-row-2,
-		.bee-row-3 {
-			background-repeat: no-repeat;
-			text-align: center;	
-		}
-
+                                 height: 70vh;
+                                 min-width: 70%;
+      }}
+	
 		body {
-			color: #000
-		}
-
-		body {
+			color: #000;
 			background-color: #212529;
-			font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif
+			font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+		}
+
+		a {
+			color: #000;
 		}
 
 		* {
-			box-sizing: border-box
+			box-sizing: border-box;
+		}
+    
+		body {
+			margin: 0;
 		}
 
-		body {
-			margin: 0
+		.bee-desktop_hide {
+			display: none;
+		}
+
+		.bee-row {
+			position: relative;
 		}
 
 		.bee-row-content {
-			max-width: 1440px;
+			max-width: 1920px;
 			margin: 0 auto;
-			display: flex
+		}
+
+		.bee-row-content {
+			display: flex;
+			position: relative;
+		}
+
+		.bee-row-content .bee-col-w1 {
+			flex-basis: 8%;
 		}
 
 		.bee-row-content .bee-col-w4 {
-			flex-basis: 33%
+			flex-basis: 33%;
+		}
+
+		.bee-row-content .bee-col-w10 {
+			flex-basis: 83%;
 		}
 
 		.bee-row-content .bee-col-w12 {
-			flex-basis: 100%
+			flex-basis: 100%;
 		}
 
 		.bee-divider {
-			overflow: auto
+			overflow: auto;
 		}
 
 		.bee-divider .center {
-			margin: 0 auto
+			margin: 0 auto;
 		}
 
-		@media (max-width:768px) {
-			.bee-row-content:not(.no_stack) {
-				display: block
-			}
+		.bee-icon {
+			vertical-align: middle;
+			display: inline-block;
 		}
 
-		.bee-row-1 .bee-row-content,
-		.bee-row-2 .bee-row-content,
-		.bee-row-3 .bee-row-content {
+		.bee-icon .bee-content {
+			align-items: center;
+			display: flex;
+		}
+
+		.bee-image img {
+			width: 100%;
+			display: block;
+		}
+
+		.bee-image {
+			overflow: auto;
+		}
+
+		.bee-image .bee-center {
+			margin: 0 auto;
+		}
+
+		.bee-row-1 {
+			background-repeat: no-repeat;
+		}
+
+		.bee-row-1 .bee-row-content {
+			color: #000;
 			background-repeat: no-repeat;
 			border-radius: 0;
-			color: #000
 		}
 
-		.bee-row-2 .bee-col-1 {
-			padding-top: 5px
+		.bee-row-1 .bee-col-1 {
+			padding-left: 5px;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1,
+		.bee-row-1 .bee-col-1 .bee-block-2 {
+			width: 100%;
+			padding: 10px 5px;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-3 {
+			color: #000;
+			letter-spacing: 10px;
+			text-align: center;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 {
+			color: #000;
+			text-align: center;
+			font-family: inherit;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.bee-row-1 .bee-col-2 {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		.bee-row-1 .bee-col-3 {
+			padding-right: 5px;
+		}
+
+		.bee-row-2 {
+			background-repeat: no-repeat;
+		}
+
+		.bee-row-2 .bee-row-content {
+			color: #000;
+			background-repeat: no-repeat;
+			border-radius: 0;
 		}
 
 		.bee-row-2 .bee-col-1 .bee-block-1 {
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+
+		.bee-row-3 {
+			background-repeat: no-repeat;
+		}
+
+		.bee-row-3 .bee-row-content {
+			color: #000;
+			background-repeat: no-repeat;
+			border-radius: 0;
+		}
+
+		.bee-row-3 .bee-col-1 {
+			flex-direction: column;
+			justify-content: center;
 			padding-bottom: 5px;
-			padding-top: 5px
+			display: flex;
+		}
+
+		.bee-row-3 .bee-col-2 {
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 5px;
+			padding-left: 5px;
+			padding-right: 5px;
+			display: flex;
+		}
+
+		.bee-row-3 .bee-col-3 {
+			flex-direction: column;
+			justify-content: center;
+			padding-bottom: 5px;
+			padding-right: 5px;
+			display: flex;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon-image {
+			padding: 5px;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon-image {
+			padding: 0 5px 5px;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0;
+		}
+
+		@media (max-width:768px) {
+
+			.bee-row-content:not(.no_stack) {
+				display: block;
+			}
+
+			.bee-desktop_hide {
+				display: block !important;
+			}
+
+			.bee-mobile_hide {
+				display: none;
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 {
+				padding: 0 5px !important;
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 img {
+				float: none !important;
+				margin: 0 auto !important;
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-1 {
+				padding: 0 5px !important;
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-1 img {
+				float: none !important;
+				margin: 0 auto !important;
+			}
+		}
+
+		@media (max-width:1420px) {
+			.bee-row-1 .bee-col-1 {
+				padding: 0 !important;
+			}
+
+			.bee-row-1 .bee-col-2 {
+				padding: 5px 0 !important;
+			}
+
+			.bee-row-1 .bee-col-3 {
+				padding: 0 !important;
+			}
+
+			.bee-row-3 .bee-col-1 {
+				padding: 0 !important;
+			}
+
+			.bee-row-3 .bee-col-2 {
+				padding: 5px 0 !important;
+			}
+
+			.bee-row-3 .bee-col-3 {
+				padding: 0 0 5px !important;
+			}
 		}
 	
 .legal {
@@ -328,10 +520,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	box-shadow: none;
 	outline: none;
 }
-/* experimental */
-.checkout-modal__close.__hidden {
-	display: none;
-}
 
 @media (max-width: 600px) {
 	.checkout-modal__close {
@@ -445,11 +633,81 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body>
 	<div class="bee-page-container">
-		<div class="bee-row bee-row-1" style= z-index: 9999 !important;">
-			<div class="bee-col bee-col-1 bee-col-w12"><div id="play"></div></div>
+		<div class="bee-row bee-row-1" style="z-index: 9999 !important;">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w1">
+					<div class="bee-block bee-block-1 bee-image bee-mobile_hide"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="max-width:106px;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-image bee-desktop_hide"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="max-width:112px;" alt=""></div>
+					<div class="bee-block bee-block-3 bee-icons bee-mobile_hide">
+						<div class="bee-icon bee-icon-first">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/tiktok.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://vk.com/kinowatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/iconfinder-social-media-applications-32vk-4102593_113806.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://ok.ru/group/58259070976148" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/odnoklassniki.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.instagram.com/kinowatch_001/" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/instagram.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.youtube.com/@kinowatch_001/featured" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/youtube.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://t.me/SearchWatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/telegram.png" height="48px" width="auto"></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="bee-block bee-block-4 bee-icons bee-desktop_hide">
+						<div class="bee-icon bee-icon-first">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/tiktok.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://vk.com/kinowatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/iconfinder-social-media-applications-32vk-4102593_113806.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://ok.ru/group/58259070976148" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/odnoklassniki.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.instagram.com/kinowatch_001/" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/instagram.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon ">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://www.youtube.com/@kinowatch_001/featured" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/youtube.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+						<div class="bee-icon bee-icon-last">
+							<div class="bee-content">
+								<div class="bee-icon-image"><a href="https://t.me/SearchWatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/telegram.png" height="32px" width="auto"></a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w10"><div id="play" style="height: 99.5vh; min-width: 99.5%;"></div></div>
+				<div class="bee-col bee-col-3 bee-col-w1"></div>
+			</div>
 		</div>
-		
-		<div class="bee-row bee-row-2" style= z-index: 9999 !important;">
+		<div class="bee-row bee-row-2" style="z-index: 9999 !important;">
 			<div class="bee-row-content">
 				<div class="bee-col bee-col-1 bee-col-w12">
 					<div class="bee-block bee-block-1 bee-divider">
@@ -458,25 +716,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</div>
 			</div>
 		</div>
-	<div class="bee-row bee-row-3">
+		<div class="bee-row bee-row-3" style="z-index: 9999 !important;">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4">
-				   <div class="ads" style="overflow: auto; z-index: 9999 !important;">
-					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>
-					</div>
-				</div>
-				<div class="bee-col bee-col-2 bee-col-w4">
-			           <div class="ads" style="overflow: auto; z-index: 9999 !important;">
-					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>
-					</div>
-			 </div>
-				<div class="bee-col bee-col-3 bee-col-w4">
-				   <div class="ads" style="overflow: auto; z-index: 9999 !important;">
+				<div class="bee-col bee-col-1 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
 					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
-					</div>
-				</div>
-		    </div> 
- 		</div> 
+					</div></div>
+				<div class="bee-col bee-col-2 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
+					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
+					</div></div>
+				<div class="bee-col bee-col-3 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
+					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
+					</div></div>
+			</div>
+		</div>
 	</div>
 
 
@@ -485,8 +737,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-<div class="branding"><ins class="604c7625" style="z-index: -1 !important;" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins></div>	
-<!-- <ins class="604c7625" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins> -->
+<div class="branding"><ins class="604c7625" style="z-index: -1 !important;" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins></div>
 <ins class="604c7625" data-key="3d42d1f55e888808d27eaf556c3c1c6c" data-cp-host="VMbxNZKU6nyu|3|https://eltigre001kz.github.io/player.html"></ins>
 <script async src="https://aj1907.online/63c0d7d8.js"></script>
+
+
 </body></html>
