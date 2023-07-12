@@ -1,5 +1,5 @@
 <html><head>
-
+    
 <meta charset="UTF-8">
 <link rel="shortcut icon" href="/favicon.ico">	
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -9,13 +9,13 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
-<title>KinoWatch</title>
+	<title>KinoWatch</title>
 	
 	<meta name="viewport" content="width=device-width">
-	<script src="/loadPlayer.js" type="text/javascript"></script>
+<script src="/loadPlayer.js" type="text/javascript"></script>
 	<style>
-	
-	/*выкл*/
+
+/*выкл*/
 	
 		div[id*=epom-pushdown] {
               height: 0px !important;
@@ -32,9 +32,10 @@
 	
  /*выкл тест*/	
  
-	 div > img{
+/*	 div > img{
           margin: 0px ! important;
           max-width: 330px !important;
+/*
  }
 
  .branding {
@@ -86,10 +87,11 @@ div[id*=brnd] {
 	
 	@media screen and (max-width: 768px) {
                             #play {
-                                 height: 64vh !important;
-                                 min-width: 64% !important;
+                                 height: 62.6vh !important;
+                                 min-width: 62.6% !important;
       }}
-	
+
+    
 		body {
 			color: #000;
 			background-color: #212529;
@@ -103,7 +105,7 @@ div[id*=brnd] {
 		* {
 			box-sizing: border-box;
 		}
-    
+
 		body {
 			margin: 0;
 		}
@@ -119,7 +121,6 @@ div[id*=brnd] {
 		.bee-row-content {
 			max-width: 100%;
 			margin: 0 auto;
-			text-align: center !important;
 		}
 
 		.bee-row-content {
@@ -131,12 +132,12 @@ div[id*=brnd] {
 			flex-basis: 8%;
 		}
 
-		.bee-row-content .bee-col-w4 {
-			flex-basis: 33%;
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 17%;
 		}
 
 		.bee-row-content .bee-col-w10 {
-			flex-basis: 83%;
+			flex-basis: 84%;
 		}
 
 		.bee-row-content .bee-col-w12 {
@@ -166,9 +167,12 @@ div[id*=brnd] {
 			display: block;
 		}
 
+
 		.bee-image {
 			overflow: auto;
 		}
+
+
 
 		.bee-image .bee-center {
 			margin: 0 auto;
@@ -184,41 +188,59 @@ div[id*=brnd] {
 			border-radius: 0;
 		}
 
-		.bee-row-1 .bee-col-1 {
-			padding-left: 5px;
-/* 			background: rgba(0, 0, 0, 0.63) */
-		}
-
 		.bee-row-1 .bee-col-1 .bee-block-1,
 		.bee-row-1 .bee-col-1 .bee-block-2 {
 			width: 100%;
 			padding: 10px 5px;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 {
+		.bee-row-1 .bee-col-1 .bee-block-3,
+		.bee-row-1 .bee-col-1 .bee-block-4,
+		.bee-row-1 .bee-col-1 .bee-block-5,
+		.bee-row-1 .bee-col-1 .bee-block-6,
+		.bee-row-1 .bee-col-1 .bee-block-7,
+		.bee-row-1 .bee-col-1 .bee-block-8 {
+			width: 100%;
+			padding-bottom: 10px;
+		}
+
+.bee-row-1 .bee-col-1 .bee-block-3:hover {
+  transform: scale(1.2);
+}
+.bee-row-1 .bee-col-1 .bee-block-4:hover {
+  transform: scale(1.2);
+}
+.bee-row-1 .bee-col-1 .bee-block-5:hover {
+  transform: scale(1.2);
+}
+.bee-row-1 .bee-col-1 .bee-block-6:hover {
+  transform: scale(1.2);
+}
+.bee-row-1 .bee-col-1 .bee-block-7:hover {
+  transform: scale(1.2);
+}
+.bee-row-1 .bee-col-1 .bee-block-8:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+		.bee-row-1 .bee-col-1 .bee-block-9 {
 			color: #000;
-			letter-spacing: 10px;
 			text-align: center;
 			font-family: inherit;
 			font-size: 14px;
 			font-weight: 400;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-4 {
-			color: #000;
-			text-align: center;
-			font-family: inherit;
-			font-size: 14px;
-			font-weight: 400;
+		.bee-row-1 .bee-col-1 .bee-block-10,
+		.bee-row-1 .bee-col-1 .bee-block-11 {
+			width: 100%;
 		}
 
-		.bee-row-1 .bee-col-2 {
-			padding-left: 5px;
-			padding-right: 5px;
-		}
-
-		.bee-row-1 .bee-col-3 {
-			padding-right: 5px;
+		.bee-row-1 .bee-col-3 .bee-block-1 {
+			width: 100%;
 		}
 
 		.bee-row-2 {
@@ -249,49 +271,72 @@ div[id*=brnd] {
 		.bee-row-3 .bee-col-1 {
 			flex-direction: column;
 			justify-content: center;
-			padding-bottom: 5px;
 			display: flex;
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			width: 100%;
 		}
 
 		.bee-row-3 .bee-col-2 {
 			flex-direction: column;
 			justify-content: center;
-			padding-bottom: 5px;
-			padding-left: 5px;
-			padding-right: 5px;
 			display: flex;
+		}
+
+		.bee-row-3 .bee-col-2 .bee-block-1 {
+			width: 100%;
 		}
 
 		.bee-row-3 .bee-col-3 {
 			flex-direction: column;
 			justify-content: center;
-			padding-bottom: 5px;
-			padding-right: 5px;
 			display: flex;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon-image {
-			padding: 5px 20px 5px 20px
-/* 			padding: 20px; */
+		.bee-row-3 .bee-col-3 .bee-block-1 {
+			width: 100%;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon:not(.bee-icon-first) .bee-content {
-			margin-left: 0;
+		.bee-row-3 .bee-col-4 {
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-3 .bee-icon::not(.bee-icon-last) .bee-content {
-			margin-right: 0;
+		.bee-row-3 .bee-col-4 .bee-block-1 {
+			width: 100%;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon-image {
+		.bee-row-3 .bee-col-5 {
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
+		}
+
+		.bee-row-3 .bee-col-5 .bee-block-1 {
+			width: 100%;
+		}
+
+		.bee-row-3 .bee-col-6 {
+			flex-direction: column;
+			justify-content: center;
+			display: flex;
+		}
+
+		.bee-row-3 .bee-col-6 .bee-block-1 {
+			width: 100%;
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-9 .bee-icon-image {
 			padding: 0 5px 5px;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon:not(.bee-icon-first) .bee-content {
+		.bee-row-1 .bee-col-1 .bee-block-9 .bee-icon:not(.bee-icon-first) .bee-content {
 			margin-left: 0;
 		}
 
-		.bee-row-1 .bee-col-1 .bee-block-4 .bee-icon::not(.bee-icon-last) .bee-content {
+		.bee-row-1 .bee-col-1 .bee-block-9 .bee-icon::not(.bee-icon-last) .bee-content {
 			margin-right: 0;
 		}
 
@@ -309,16 +354,6 @@ div[id*=brnd] {
 				display: none;
 			}
 
-			.bee-row-1 .bee-col-1 .bee-block-2 {
-				padding: 0 5px !important;
-			}
-
-			.bee-row-1 .bee-col-1 .bee-block-2 img {
-				float: none !important;
-				margin: 0 auto !important;
-				width: 40%;
-			}
-
 			.bee-row-1 .bee-col-1 .bee-block-1 {
 				padding: 0 5px !important;
 			}
@@ -327,18 +362,23 @@ div[id*=brnd] {
 				float: none !important;
 				margin: 0 auto !important;
 			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 {
+				padding: 0 5px !important;
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-2 img {
+				float: none !important;
+				margin: 0 auto !important;
+			}
 		}
 
 		@media (max-width:1420px) {
 			.bee-row-1 .bee-col-1 {
 				padding: 0 !important;
-/* 				background: rgba(0, 0, 0, 0.63) */
 			}
 
-			.bee-row-1 .bee-col-2 {
-				padding: 5px 0 !important;
-			}
-
+			.bee-row-1 .bee-col-2,
 			.bee-row-1 .bee-col-3 {
 				padding: 0 !important;
 			}
@@ -348,11 +388,15 @@ div[id*=brnd] {
 			}
 
 			.bee-row-3 .bee-col-2 {
-				padding: 5px 0 !important;
+				padding: 0 !important;
 			}
 
 			.bee-row-3 .bee-col-3 {
-				padding: 0 0 5px !important;
+				padding: 0 !important;
+			}
+
+			.bee-row-3 .bee-col-4 {
+				padding: 0 !important;
 			}
 		}
 	
@@ -644,45 +688,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </style></head>
 
 <body>
-	<div class="bee-page-container"style="background: rgba(0, 0, 0, 0.63);">
+	<div class="bee-page-container" style="background: rgba(0, 0, 0, 0.63);">
 		<div class="bee-row bee-row-1" style="z-index: 9999 !important;">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w1">
-					<div class="bee-block bee-block-1 bee-image bee-mobile_hide"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="max-width:106px;" alt=""></div>
-					<div class="bee-block bee-block-2 bee-image bee-desktop_hide"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="max-width:112px;" alt=""></div>
-					<div class="bee-block bee-block-3 bee-icons bee-mobile_hide">
-						<div class="bee-icon bee-icon-first">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/tiktok.png" height="48px" "width="auto" </a></div>
-							</div>
-						</div>
-						<div class="bee-icon ">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://vk.com/kinowatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/iconfinder-social-media-applications-32vk-4102593_113806.png" height="48px" width="auto"></a></div>
-							</div>
-						</div>
-						<div class="bee-icon ">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://ok.ru/group/58259070976148" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/odnoklassniki.png" height="48px" width="auto"></a></div>
-							</div>
-						</div>
-						<div class="bee-icon ">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://www.instagram.com/kinowatch_001/" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/instagram.png" height="48px" width="auto"></a></div>
-							</div>
-						</div>
-						<div class="bee-icon ">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://www.youtube.com/@kinowatch_001/featured" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/youtube.png" height="48px" width="auto"></a></div>
-							</div>
-						</div>
-						<div class="bee-icon bee-icon-last">
-							<div class="bee-content">
-								<div class="bee-icon-image"><a href="https://t.me/SearchWatch_bot" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/telegram.png" height="48px" width="auto"></a></div>
-							</div>
-						</div>
-					</div>
-					<div class="bee-block bee-block-4 bee-icons bee-desktop_hide">
+				<div class="bee-col bee-col-1 bee-col-w1" style="
+    position: relative;
+">
+					<div class="bee-block bee-block-1 bee-image bee-mobile_hide"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="/* max-width:106px; */position: inherit;width: 100%;height: auto;" alt=""></div>
+					<div class="bee-block bee-block-2 bee-image bee-desktop_hide"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/logo%20%D0%B1%D0%B5%D0%B7%20%D1%84%D0%BE%D0%BD%D0%B0.png" style="max-width:105px;" alt=""></div>
+					<div class="bee-block bee-block-3 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/pngimg.com%20-%20tiktok_PNG2.png" style="/* max-width:116px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="ТикТок"></a></div>
+					<div class="bee-block bee-block-4 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://vk.com/kinowatch_bot" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/iconfinder-social-media-applications-32vk-4102593_113806.png" style="/* max-width:110px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="Вконтакте"></a></div>
+					<div class="bee-block bee-block-5 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://ok.ru/group/58259070976148" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/pngimg.com%20-%20odnoklassniki_PNG13.png" style="/* max-width:117px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="Одноклассники"></a></div>
+					<div class="bee-block bee-block-6 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://www.instagram.com/kinowatch_001/" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/instagram.png" style="/* max-width:110px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="Инстаграм"></a></div>
+					<div class="bee-block bee-block-7 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://www.youtube.com/@kinowatch_001/featured" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/1491579609-yumminkysocialmedia08_83079.png" style="/* max-width:110px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="YouTube"></a></div>
+					<div class="bee-block bee-block-8 bee-image bee-mobile_hide" style="
+    transition: transform 0.2s;
+"><a href="https://t.me/SearchWatch_bot" target="_blank"><img class="bee-center bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/1111.png" style="/* max-width:117px; */flex-basis: 8%;height: 8%;width: auto;margin: auto;left: 0;top: 0;bottom: 0;right: 0;" alt="Телеграм"></a></div>
+					<div class="bee-block bee-block-9 bee-icons bee-desktop_hide">
 						<div class="bee-icon bee-icon-first">
 							<div class="bee-content">
 								<div class="bee-icon-image"><a href="https://www.tiktok.com/@kinowatch_001?lang=ru-RU" target="_blank"><img src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/tiktok.png" height="32px" width="auto"></a></div>
@@ -714,9 +746,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							</div>
 						</div>
 					</div>
+					<div class="bee-block bee-block-10 bee-image bee-desktop_hide"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fullwidthOnMobile bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/970%D1%8550.png" style="/* max-width:116px; */" alt=""></a></div></div>
+					<div class="bee-block bee-block-11 bee-image bee-mobile_hide"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/300%D1%85400.png" style="/* max-width:116px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;position: absolute !important;bottom: 0 !important;" alt="Инстаграм"></a></div></div>
 				</div>
 				<div class="bee-col bee-col-2 bee-col-w10"><div id="play" style="box-shadow: 0px 0px 49px 30px #000000;height: 99.5vh; min-width: 99.5%;"></div></div>
-				<div class="bee-col bee-col-3 bee-col-w1"></div>
+				<div class="bee-col bee-col-3 bee-col-w1" style="
+    position: relative;
+">
+					<div class="bee-block bee-block-1 bee-image bee-mobile_hide"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/160%D1%85600.png" style="/* max-width:110px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;position: absolute !important;margin: auto !important;left: 0 !important;top: 0 !important;bottom: 0 !important;right: 0 !important;" alt="Инстаграм"></a></div></div>
+				</div>
 			</div>
 		</div>
 		<div class="bee-row bee-row-2" style="z-index: 9999 !important;">
@@ -730,15 +768,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		</div>
 		<div class="bee-row bee-row-3" style="z-index: 9999 !important;">
 			<div class="bee-row-content">
-				<div class="bee-col bee-col-1 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
-					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
-					</div></div>
-				<div class="bee-col bee-col-2 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
-					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
-					</div></div>
-				<div class="bee-col bee-col-3 bee-col-w4" style="overflow: auto; z-index: 9999 !important;"><div class="ads" style="overflow: auto; z-index: 9999 !important;">
-					   <ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins>					   
-					</div></div>
+				<div class="bee-col bee-col-1 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins></div></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins></div></div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><ins class="604c7625" data-key="47959b1c28094532b37e5577cf33cde9" data-cp-host="VMbxNZKU6nyu|2|https://eltigre001kz.github.io/player.html"></ins></div></div>
+				</div>
+				<div class="bee-col bee-col-4 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/500%D1%85200.png" style="/* max-width:233px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;" alt=""></a></div></div>
+				</div>
+				<div class="bee-col bee-col-5 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/500%D1%85200.png" style="/* max-width:233px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;" alt=""></a></div></div>
+				</div>
+				<div class="bee-col bee-col-6 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-image"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/500%D1%85200.png" style="/* max-width:233px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;" alt=""></a></div></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -750,8 +797,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDFFZQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="branding"><ins class="604c7625" style="z-index: -1 !important;" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins></div>
-<ins class="604c7625" data-key="3d42d1f55e888808d27eaf556c3c1c6c" data-cp-host="VMbxNZKU6nyu|3|https://eltigre001kz.github.io/player.html"></ins>
-<script async src="https://aj1907.online/63c0d7d8.js"></script>
+<div class="sticker"><ins class="604c7625" data-key="3d42d1f55e888808d27eaf556c3c1c6c" data-cp-host="VMbxNZKU6nyu|3|https://eltigre001kz.github.io/player.html"></ins></div>
+<script async="" src="https://aj1907.online/63c0d7d8.js"></script>
+
 
 
 </body></html>
