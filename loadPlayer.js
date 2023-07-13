@@ -24,26 +24,6 @@
       }
 });
 		      
-
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    function fullScreen(element) {
-  if(element.requestFullscreen) {
-    element.requestFullscreen();
-  } else if(element.webkitrequestFullscreen) {
-    element.webkitRequestFullscreen();
-  } else if(element.mozRequestFullscreen) {
-    element.mozRequestFullScreen();
-  }
-}
-
-document.getElementById('play');
-fullScreen(play);
-  } else {
-    // код для обычных устройств
-}
-		      
-
-		      
 // 		window.addEventListener("message", function (event) {
 // 			if (event.data.event === 'init') {
 // 				document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
