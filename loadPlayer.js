@@ -24,11 +24,11 @@
       }
 });
 		      
-// 		window.addEventListener("message", function (event) {
-// 			if (event.data.event === 'init') {
-// 				document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
-// 			}
-// 		});
+		window.addEventListener("message", function (event) {
+			if (event.data.event === 'init') {
+				document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
+			}
+ 		});
 	}	  
 }
 else{
