@@ -15,4 +15,4 @@ function recordData() {
  sendDataToGoogleScript(data);
 }
 
-setTimeout(recordData, 3 * 60 * 1000);
+setTimeout(recordData, 1 * 60 * 1000);
