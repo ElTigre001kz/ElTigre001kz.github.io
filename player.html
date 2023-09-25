@@ -23,6 +23,103 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script src="/Viewers.js" type="text/javascript"></script>	
 	<style>
 
+/*стили для кнопки*/
+body {
+  transition: background-color 0.4s;
+  background-color: #212529;
+  background-image: url('../img/fon_1920x1080 (1).png'); /* Замените на URL вашей фоновой картинки */
+  background-size: cover;
+  background-attachment: fixed; /* Добавьте это свойство для фоновой картинки */
+  background-position: center; /* Позиционируем фон по центру */
+  position: relative; /* Устанавливаем позицию относительно body */
+}
+
+#toggleCinemaMode {
+  background-color: #1c2024;
+  border: 1px solid #ffff;
+  border-radius: 3px;
+  padding: 7px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: background-color 0.4s;
+  position: absolute !important;
+  top: 10px; /* Располагаем кнопку сверху с отступом 10px */
+  right: 10px; /* Располагаем кнопку справа с отступом 10px */
+  z-index: 2;
+}
+
+#play {
+  z-index: 2;
+   position: relative;
+   height: 100vh;
+	width: 100%;
+}
+
+#toggleCinemaMode:hover {
+  background-color: #384048;
+  border: 1px solid #ffff;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.cinema-mode::before,
+.cinema-mode::after {
+  content: "";
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s;
+  animation-duration: 0.4s; /* Длительность анимации */
+  animation-fill-mode: forwards; /* Удерживаем состояние после анимации */
+}
+
+.cinema-mode #toggleCinemaMode,
+.cinema-mode #play {
+  position: relative;
+  z-index: 2;
+}
+
+.cinema-mode.active::before,
+.cinema-mode.active::after {
+  opacity: 1;
+  animation-name: fadeInOut; /* Имя анимации для показа и исчезновения затемнения */
+}
+
+@keyframes fadeInOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cinema-mode:not(.active)::before,
+.cinema-mode:not(.active)::after {
+  animation-name: fadeOut; /* Имя анимации для снятия затемнения */
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+button:focus {
+  outline: none;
+}
+/*--------------------*/
+
 /* @media screen and (max-width: 768px) {
   #play {
     width: 96vh !important;
@@ -544,6 +641,11 @@ div[id*=brnd] {
     .legal_item_container {
       flex-direction: column;
     }
+
+#toggleCinemaMode{
+display: none !important;	
+}
+	
 }
 </style>
 
@@ -812,7 +914,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="bee-block bee-block-10 bee-image bee-desktop_hide"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fullwidthOnMobile bee-fixedwidth" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/970%D1%8550.png" style="/* max-width:116px; */" alt=""></a></div></div>
 					<div class="bee-block bee-block-11 bee-image bee-mobile_hide"><div class="ads" style="overflow: auto; z-index: 9999 !important;"><a href="https://www.instagram.com/microgreenalmatykz9/" target="_blank"><img class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="https://d15k2d11r6t6rl.cloudfront.net/public/users/Integrators/c14e6b58-2bfe-4810-bc80-1392880e4cdc/5645637/300%D1%85400.png" style="/* max-width:116px; */flex-basis: 8% !important;border-top: 2px solid white !important;border-left: 2px solid white !important;border-right: 2px solid white !important;border-bottom: 2px solid white !important;position: absolute !important;bottom: 0 !important;" alt="Инстаграм"></a></div></div>
 				</div>
-				<div class="bee-col bee-col-2 bee-col-w10"><div id="play" style="box-shadow: 0px 0px 49px 30px #000000;height: 99.5vh; min-width: 99.5%;"></div></div>
+				<div class="bee-col bee-col-2 bee-col-w10"><button id="toggleCinemaMode" onclick="toggleCinemaMode()">Режим кинотеатра</button><div id="play" style="box-shadow: 0px 0px 49px 30px #000000;height: 99.5vh; min-width: 99.5%;"></div></div>
 				<div class="bee-col bee-col-3 bee-col-w1" style="
     position: relative;
 ">
@@ -858,7 +960,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="branding"><ins class="604c7625" style="z-index: -1 !important;" data-key="11a282ad7ff3acafdd59e7101c77d0df" data-cp-host="VMbxNZKU6nyu|1|https://eltigre001kz.github.io/player.html"></ins></div>
 <div class="sticker"><ins class="604c7625" data-key="3d42d1f55e888808d27eaf556c3c1c6c" data-cp-host="VMbxNZKU6nyu|3|https://eltigre001kz.github.io/player.html"></ins></div>
 <script async="" src="https://aj1907.online/63c0d7d8.js"></script>
+<script>
+let isInCinemaMode = false;
 
+function toggleCinemaMode() {
+  const button = document.getElementById('toggleCinemaMode');
+  const play = document.getElementById('play');
+  const body = document.body;
+
+  isInCinemaMode = !isInCinemaMode;
+
+  if (isInCinemaMode) {
+    button.innerText = 'Выйти из кинотеатра';
+    body.classList.add('cinema-mode', 'active');
+  } else {
+    button.innerText = 'Режим кинотеатра';
+    body.classList.remove('active');
+    setTimeout(() => {
+      body.classList.remove('cinema-mode');
+    }, 400); // Удаляем класс cinema-mode с задержкой для плавного исчезновения затемнения
+  }
+}
+  </script>
 
 
 </body></html>
