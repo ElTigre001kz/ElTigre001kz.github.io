@@ -10,10 +10,8 @@
 			  video.width = '100%';
 			  video.height = '100%';
 			  video.setAttribute('allowFullScreen', '');
-			  // video.setAttribute('frameborder="0"');
-			  // video.setAttribute('allowfullscreen allow="autoplay *');
-			  // video.setAttribute('fullscreen *');
-			   // frameborder=\"0\" allowfullscreen allow=\"autoplay *; fullscreen *  
+			  video.setAttribute('allowFullscreen = true');
+                          video.setAttribute('allow = 'autoplay *; fullscreen *');
 			  document.querySelector('#play').appendChild(video);
 			
 	  let name = params.get("name");
