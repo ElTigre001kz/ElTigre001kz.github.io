@@ -9,7 +9,8 @@
 			  video.src = 'https://' + video_url;
 			  video.width = '100%';
 			  video.height = '100%';
-			  video.setAttribute('allowFullScreen', '');
+			  // video.setAttribute('allowFullScreen', '');
+			     video.setAttribute('frameborder="0" allowfullscreen allow="autoplay *; fullscreen *');
 			   // frameborder=\"0\" allowfullscreen allow=\"autoplay *; fullscreen *  
 			  document.querySelector('#play').appendChild(video);
 			
@@ -27,7 +28,7 @@
 		      
 		window.addEventListener("message", function (event) {
 			if (event.data.event === 'init') {
-				document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
+				// document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
 	
 			}
  		});
