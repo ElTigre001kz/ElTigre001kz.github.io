@@ -10,6 +10,7 @@
 			  video.width = '100%';
 			  video.height = '100%';
 			  video.setAttribute('allowFullScreen', '');
+			   // frameborder=\"0\" allowfullscreen allow=\"autoplay *; fullscreen *  
 			  document.querySelector('#play').appendChild(video);
 			
 	  let name = params.get("name");
@@ -26,7 +27,7 @@
 		      
 		window.addEventListener("message", function (event) {
 			if (event.data.event === 'init') {
-				// document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
+				document.getElementById('videoiframe').contentWindow.postMessage({"api": "fullscreen"}, "*");
 	
 			}
  		});
