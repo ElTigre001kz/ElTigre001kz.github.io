@@ -1,5 +1,5 @@
 ﻿let getUrl = document.location.search
-     if (getUrl.includes('VMbxNZKU6nyu')) {
+     if (getUrl.includes('VMbxNZKU6nyu' || 'searchwatch.bot')) {
         let params = (new URL(document.location)).searchParams; 
 	    let video_url = params.get("video");
 	      if (video_url) {
