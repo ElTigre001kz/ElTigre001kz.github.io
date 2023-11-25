@@ -23,7 +23,7 @@
           substr = ' (' + year + ')';
         }
           document.title = name + substr + ' - смотреть онлайн';
-          // document.getElementById('name').appendChild(document.createTextNode(name));
+          // document.getElementById('name').appendChild(document.createTextNode(name)); 
       }
 });
 		      
