@@ -203,9 +203,10 @@ display: flex;
        display: flex;
     justify-content: center;
     /*align-items: center;*/
-    border-top: 1px solid #ffff;
-	border-left: 1px solid #ffff;
-	border-right: 1px solid #ffff;
+    align-items: flex-end;
+/*     border-top: 1px solid #ffff; */
+/* 	border-left: 1px solid #ffff; */
+/* 	border-right: 1px solid #ffff; */
 }
 
 #ppb-2,
@@ -218,10 +219,11 @@ display: flex;
        display: flex;
     justify-content: center;
     /*align-items: center;*/
+   align-items: flex-end;
     /*border: 1px solid #ffff;*/
-    border-top: 1px solid #ffff;
-	border-left: 1px solid #ffff;
-	border-right: 1px solid #ffff;
+/*     border-top: 1px solid #ffff; */
+/* 	border-left: 1px solid #ffff; */
+/* 	border-right: 1px solid #ffff; */
 	/*border-bottom: 1px solid #ffff;*/
 }
 
@@ -354,6 +356,7 @@ display: flex;
     width: 100%; /* Изображение занимает всю ширину контейнера */
     height: auto; /* Сохранение пропорций изображения */
     z-index: 9999;
+    border: 1px solid #ffff;
 }
 
 #ppb-10 {
