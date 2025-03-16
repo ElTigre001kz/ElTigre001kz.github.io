@@ -138,10 +138,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- <script type="text/javascript" src="https://telegram.org/js/telegram-web-app.js"></script> -->
   <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
 <script type="text/javascript">
-      let tg = window.Telegram.WebApp;
+      let tg = window.Telegram.WebApp{
+        version: '8.0'
+      };
         // Получение ссылки на видеоплеер
         const videoPlayer = document.getElementById('play');
         tg.expand()
+  tg.requestFullscreen();
   // tg.enterFullscreen();
         // Регистрация обработчика события на кнопку полноэкранного режима
         videoPlayer.addEventListener('click', () => {
